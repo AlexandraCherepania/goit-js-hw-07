@@ -21,15 +21,14 @@ function createBoxItem(galleryItems) {
                     alt="${description}"
                 />
             </a>
-        </div >
-`;
+        </div >`;
     })
       .join('');
 };
 
 lightboxRef.addEventListener("click", onBoxRefClick);
 
-instance.show();
+
 function onBoxRefClick(event) {
   event.preventDefault();
   if (!event.target.classList.contains("gallery__image")) {
