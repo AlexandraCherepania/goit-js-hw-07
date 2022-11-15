@@ -30,8 +30,8 @@ function onImageGallaryClick(event) {
     return
     };
     const modalWindow = basicLightbox.create(`
-    <img src = "${event.target.dataset.source}"> width = "800" height = "600"
-    `);
+    <img src = "${event.target.dataset.source}"> width = "800" height = "600"`);
     modalWindow.show();
     console.log(event);
 };
+
